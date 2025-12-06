@@ -9,7 +9,7 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Text>social x app</Text>
+      <Text>social x app login</Text>
     </View>
   );
 }
