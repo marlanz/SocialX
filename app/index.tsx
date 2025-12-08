@@ -1,15 +1,15 @@
-import { Text, View } from "react-native";
+import { useClerk } from "@clerk/clerk-expo";
+import React from "react";
+import { Button, Text, View } from "react-native";
 
-export default function Index() {
+const HomeScreen = () => {
+  const { signOut } = useClerk();
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>social x app login</Text>
+    <View>
+      <Text>index</Text>
+      <Button title="Sign out" onPress={() => signOut()}></Button>
     </View>
   );
-}
+};
+
+export default HomeScreen;
