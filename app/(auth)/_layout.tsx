@@ -6,7 +6,7 @@ export default function AuthRoutesLayout() {
   const { isSignedIn } = useAuth();
 
   if (isSignedIn) {
-    return <Redirect href={"/" as any} />;
+    return <Redirect href={"/(tabs)" as any} />;
   }
 
   return <Stack screenOptions={{ headerShown: false }} />;
