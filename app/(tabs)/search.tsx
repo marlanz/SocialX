@@ -49,7 +49,7 @@ const SearchScreen = () => {
                 Trending in Technology
               </Text>
               <Text className="font-bold text-gray-900 text-lg">
-                {item.topic}
+                {item.topic}kjwhekjf
               </Text>
               <Text className="text-gray-500 text-sm">{item.tweets}</Text>
             </TouchableOpacity>
